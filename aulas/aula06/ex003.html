@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(66, 120, 156);
+            color: white;
+            font: normal 2rem Arial;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Recomeçar é preciso, por vezes, pode ser a única opção.</p>
+    
+    <script>
+        alert('A seguir faremos algumas operações matemáticas, sendo a primeira de soma e logo após de divisão utilizando "parseInt ou parseFloat", pois vamos converter o que foi digitado no "prompt" de "string" para "Number", logo após utilizaremos apenas o "number" para a conversão.')
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        var divisao = n1 / n2
+        window.alert('O resultado da soma de ' + n1 + ' + ' + n2 + ' é igual a ' + soma +  ', e '+ n1 + ' dividido por ' + n2 + ' é igual a ' + divisao + '!' ) 
+        // (number + number) para adição
+        // (string + string) para concatenação (juntar)
+
+        alert('Agora vamos para a segunda demonstração de conversão utilizando apenas o "Number" para a conversão da "string" em "Number ou parseFloat".')
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        var divisao = n1 / n2
+        window.alert('O resultado da soma de ' + n1 + ' + ' + n2 + ' é igual a ' + soma +  ', e '+ n1 + ' dividido por ' + n2 + ' é igual a ' + divisao + '!' ) 
+        window.alert('Os resultados unsando o "Number.parseFloat" e apenas o "Number" foram iguais, então a escolha passa a ser da metodologia utilizada pelo desenvolvedor.')
+
+    
+
+
+    </script>
+</body>
+</html>
