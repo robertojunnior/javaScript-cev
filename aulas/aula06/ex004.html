@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(66, 120, 156);
+            color: white;
+            font: normal 1rem Arial;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício 004 - Formatando String com 'write e writeln'.</h1>
+    <h4>Abaixo você verá a execução do script em JavaScript direto na tela utilizando o "document.write e o document.writeIn".</h4>
+    <br>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! <br> Seja bem vindo(a) ao exercício 004 Formatando Strings.<br>`)
+        document.write(`Seu nome possui ${nome.length} letras contando os espaços.<br>`)
+        document.write(`Podemos transformar seu nome em maiúsculas usando o 'toUpperCase()' ou em minúsculas com o 'toLowerCase()'.<br>`)
+        document.write(`Agora estamos utilizando o 'writeln' para escrever na linha de baixo. <br> Um BR para pular de linha no mesmo parágrafo e na próxima frase vamos usar o 'toUpperCase' e o 'toLowerCase'.<br>`)
+        document.write(`Agora vamos demonstrar seu nome ${nome.toUpperCase()} em maiúsculas e também ${nome.toLowerCase()} em minúsculas.`)
+
+        /* Ex. executado no terminal NODE
+        > var n1 = 1545.5
+        undefined
+        >
+        > n1
+        1545.5
+        > n1.toFixed(2)
+        '1545.50'
+        > n1.toFixed(2).replace('.',',')
+        '1545,50'
+        > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}).replace('.',',')
+        'R$ 1,545,50'
+        */
+
+    
+
+        
+
+    </script>
+</body>
+</html>
