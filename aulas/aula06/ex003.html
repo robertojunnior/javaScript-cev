@@ -21,7 +21,7 @@
     <h1>Olá, mundo!</h1>
     <p>Recomeçar é preciso, por vezes, pode ser a única opção.</p>
     
-    <script>
+<script>
         alert('A seguir faremos algumas operações matemáticas, sendo a primeira de soma e logo após de divisão utilizando "parseInt ou parseFloat", pois vamos converter o que foi digitado no "prompt" de "string" para "Number", logo após utilizaremos apenas o "number" para a conversão.')
         var n1 = Number.parseFloat(window.prompt('Digite um número: '))
         var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
@@ -36,12 +36,30 @@
         var n2 = Number(window.prompt('Digite outro número: '))
         var soma = n1 + n2
         var divisao = n1 / n2
-        window.alert('O resultado da soma de ' + n1 + ' + ' + n2 + ' é igual a ' + soma +  ', e '+ n1 + ' dividido por ' + n2 + ' é igual a ' + divisao + '!' ) 
+        window.alert('O resultado da soma de ' + n1 + ' + ' + n2 + ' é igual a ' + soma +  ', e ' + n1 + ' dividido por ' + n2 + ' é igual a ' + divisao + '!') 
         window.alert('Os resultados unsando o "Number.parseFloat" e apenas o "Number" foram iguais, então a escolha passa a ser da metodologia utilizada pelo desenvolvedor.')
 
-    
+        alert('Agora vamos para a terceira demonstração de conversão utilizando o "Number" novamente para a conversão da "string" em "Number ou parseFloat", mas no código utilizamos o formato "template String" para trazer a resposta no Alert, o código fica mais limpo e fácil de compreender diferente da linha 30 e 39 do mesmo código.')
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        var divisao = n1 / n2
+        window.alert(`O resultado da soma de ${n1} + ${n2} é igual a ${soma}, e ${n1} dividido por ${n2} é igual a ${divisao}!`) 
+        window.alert('Os resultados unsando o "Number.parseFloat" e apenas o "Number" foram iguais, então a escolha passa a ser da metodologia utilizada pelo desenvolvedor.')
 
-
-    </script>
+        // Exemplo abaixo foi digitado no terminal-nodejs
+        // nome = 'Junior'
+        // 'Junior'
+        // > idade = 41
+        // 41
+        // > nota = 5.5
+        // 5.5
+        // > 'O aluno ' + nome + ' tem ' + idade + ' anos, ' + 'e sua nota foi ' + nota + '!'
+        // 'O aluno Junior tem 41 anos, e sua nota foi 5.5!'
+        // > `O aluno ${nome} tem ${idade} anos, e sua nota foi ${nota}!`
+        // 'O aluno Junior tem 41 anos, e sua nota foi 5.5!'
+        
+        
+</script>
 </body>
 </html>
