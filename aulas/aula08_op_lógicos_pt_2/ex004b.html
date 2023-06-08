@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Operadores Lógicos - Parte 01 - JS</title>
+    <style>
+        body {
+            background-color: rgb(66, 120, 156);
+            color: white;
+            font: normal 1rem Arial;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de atribuições as variáveis - Aula 07 - Parte 01</h1>
+
+
+    <script class="atribuicoes">
+        window.alert(`Neste exercício, veremos exemplos de atribuições simples, auto-atribuições e simplificaremos algumas das atribuições as variáveis.`)
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f =  b % e + 4 / e
+        document.write(`Abaixo veremos os resultados das operações e atribuições as variáveis: <br> 
+        var a = 5 + 3 <br>
+        var b = a % 5 <br>
+        var c = 5 * b ** 2 <br>
+        var d = 10 - a / 2 <br>
+        var e = 6 * 2 / d <br>
+        var f =  b % e + 4 / e <br> `)
+
+        document.write(`O resultado das váriaveis acima são: ${a} , ${b} , ${c} , ${d} , ${e} e ${f}. <br><br>`)
+
+        document.writeln(`Para simplificar as atribuições das variáveis, podemos utilizar os operadores lógicos de outra forma, vejamos a seguir: <br>
+        <br>
+        Forma simplificada <br>
+        n += 4 <br>
+        n -= 5 <br>
+        n *= 4 <br>
+        n /= 2 <br>
+        n **= 2 <br>
+        n %= 5 <br>
+        <br>
+        Os resultados serão os mesmos, mas digitaremos menos e o código fica mais simples.`)
+
+    </script>
+    
+</body>
+</html>
