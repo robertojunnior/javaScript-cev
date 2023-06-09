@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Operadores - Parte 01 - JS</title>
+    <style>
+        body {
+            background-color: rgb(66, 120, 156);
+            color: white;
+            font: normal 1rem Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 08 - Parte 02</h1>
+    <h3>Exercício de Operadores - Relacionais, Lógicos e Ternário. </h3>
+
+    <h4>Tipos de operadores</h4>
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+        <li>Lógicos</li>
+        <li>Ternário</li>
+    </ul>
+
+    <h4>Relacionais</h4>
+    <ul>
+        <li>5 > 2  True</li>
+        <li>7 < 4  False</li>
+        <li>8 >= 8 True</li>
+        <li>9 <= 7 False</li>
+        <li>5 == 5 True</li>
+        <li>4 != 4 False</li>
+    </ul>
+
+    <h4>Relacionais de identidade</h4>
+    <ul>
+        <li>5 == 5 True</li>
+        <li>5 == '5' True</li> 
+        <li>5 === '5' False</li>
+        <li>O igual == olha somente o valor e não o tipo.</li>
+        <li>Os 3 iguais === perguntam se é identico, valor e tipo, então neste caso em específico o número 5 é diferente da string '5' FALSE.</li>
+    </ul>
+
+    <h4>Operadores Lógicos</h4>
+    <ul>
+        <li>! Negação</li>
+        <li>&& Conjunção</li>
+        <li>|| Disjunção</li>
+    </ul>
+
+    <h4> Rodando exemplos no nodejs </h4>
+    <ul>
+        <li>
+            > var a = 5
+            (undefined)
+        </li>
+        <li>
+            > var b = 8
+            (undefine)
+        </li>
+        <li>
+            > true && false
+            (false)
+        </li>
+        <li>
+            > true && true
+            (true)
+        </li>
+        <li>
+            > false || false
+            (false)
+        </li>
+        <li>
+            > true || false
+            (true)
+        </li>
+        <li>
+            > true || true
+            (true)
+        </li>
+        <li>
+            > a > b && b % 2 == 0
+            (false)
+        </li>
+    </ul>
+
+    <h4>Exemplos</h4>
+    <ul>
+        <li>idade >= 15 && idade <= 17</li>
+        <li> Pergunta: A idade está entre 15 e 17?</li> 
+        <li>estado ++ 'rj' || estado == 'sp'</li>
+        <li>Pergunta: O estado é RJ ou SP?</li>
+        <li>salario > 1500 && sexo !+ 'M'</li>
+        <li>Pergunta: O salário é maior que 1.500,00 e não é do sexo masculino?</li>
+    </ul>
+
+    <h4>Precedência de operadores lógicos</h4>
+    <p>A sequência de solução para operadores lógicos será sempre primeiro o "negação / não", depois o "&& / E e por último o "|| / ou".</p>
+    <ul>
+        <li>Negação ! (Não)</li>
+        <li>Conjunção && (E)</li>
+        <li>Disjunção (Ou)</li>
+    </ul>
+
+    <h4> Lembrando a ordem de precedência para operadores aritméticos e de atribuição.</h4>
+    <ul>
+        <li>Parênteses ()</li>
+        <li>Potência **</li>
+        <li>Matemáticos * / % (dependendo de quem vier primeiro à esquerda)</li> 
+    </ul>
+    
+    <script>
+        window.alert('Receba')
+
+    </script>
+    
+</body>
+</html>

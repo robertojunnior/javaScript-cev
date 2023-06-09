@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 08 - Operadores - Parte 01 - JS</title>
+    <title>Aula 07 - Operadores - Parte 01 - JS</title>
     <style>
         body {
             background-color: rgb(66, 120, 156);
@@ -18,10 +18,11 @@
     </style>
 </head>
 <body>
-    <h1>Aula 08 - Parte 02</h1>
-    <h3>Exercício de Operadores - Relacionais, Lógicos e Ternário. </h3>
 
-    <h4>Tipo de operadores</h4>
+    <h1>Aula 07 - Parte 01</h1>
+    <h3>Exercício de Operadores - Aritméticos e de Atribuição</h3>
+
+    <h4>Tipos de operadores</h4>
     <ul>
         <li>Aritméticos</li>
         <li>Atribuição</li>
@@ -30,24 +31,14 @@
         <li>Ternário</li>
     </ul>
 
-    <h4>Relacionais</h4>
+    <h4>Precedência</h4>
     <ul>
-        <li>5 > 2  True</li>
-        <li>7 < 4  False</li>
-        <li>8 >= 8 True</li>
-        <li>9 <= 7 False</li>
-        <li>5 == 5 True</li>
-        <li>4 != 4 False</li>
+        <li>Parênteses ()</li>
+        <li>Potência **</li>
+        <li>Matemáticos */% (dependendo de quem vier primeiro à esquerda)</li> 
     </ul>
-
-    <h4>Relacionais de identidade</h4>
-    <ul>
-        <li>5 == 5 True</li>
-        <li>5 == '5' True</li> 
-        <li>5 === '5' False</li>
-        <!-- o igual == olha somente o valor e não o tipo -->
-        <!-- os 3 iguais perguntam se é identico, valor e tipo, então FALSE -->
-    </ul>
+    
+    <br>
 
     <script class="atribuicoes">
         window.alert(`Neste exercício, veremos exemplos de atribuições simples, auto-atribuições e simplificaremos algumas das atribuições as variáveis.`)
