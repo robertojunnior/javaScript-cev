@@ -15,8 +15,8 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <h1>Iniciando estudos DOM.</h1>
+    <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o <Strong>DOM</Strong> em JavaScript.</p>
     <div>Clique aqui</div>
 
@@ -26,10 +26,23 @@
     <img width="200px" src="img/arvore_dom.png" alt="">
     <br> <br>
 
+    <h4>Selecionando elementos no DOM</h4>
+    <ul>
+        <li>por Marca => getElementByTagName()</li>
+        <li>por ID => getElementById()</li>
+        <li>por Nome => getElementByTagName()</li>
+        <li>Por Classe => getElementByClass()</li>
+        <li>Por Seletor => getElementBySelector()</li>
+    </ul>
+
     <h4>Exemplificando com o Script:</h4>
 
     <script>
-        window.document.write('Olá, Mundo!')
+        var p1 = window.document.getElementsByTagName('p')[0] // selecionando o 1º p com [0]
+        window.document.write('O primeiro parágrafo é: ', p1.innerText, '<br>') // selecionou o 1º p sem formatação, pois 'innerText' seleciona apenas o texto.
+
+        var p2 = window.document.getElementsByTagName('p')[1] // selecionando o 2º p com [1]
+        window.document.write('O segundo parágrafo é: ', p2.innerHTML, '<br>') // selecionou o 2º p com o strong devido ao 'innerHTML'
 
     </script>
 </body>
