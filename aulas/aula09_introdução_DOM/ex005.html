@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 09 - Introdução DOM</title>
+    <title>Aula 09 - Introdução DOM - Selecionando elementos (Objetos) no DOM</title>
 
     <style>
         body {
@@ -18,7 +18,7 @@
     <h1>Iniciando estudos DOM.</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o <Strong>DOM</Strong> em JavaScript.</p>
-    <div>Clique aqui</div>
+    <div id="msg" class="abc">Clique aqui</div>
 
     <br>
 
@@ -48,9 +48,22 @@
         corpo.style.background = 'black' // alterando a cor do fundo com Js pelo DOM.
         corpo.style.marginLeft = '2rem' // adicionando 2rem de margem na esquerda do body.
         // corpo.style.display = 'flex'
-    
-    
-    
+        
+        var idMsg = window.document.getElementById('msg')
+        idMsg.style.color = 'blue', idMsg.style.background ='green'
+        // idMsg.document.write('') // imprime o texto original com a alteração
+        idMsg.innerText = 'Doritos' //substitui o texto original com o innerText, mas não tem prioridade sobre o write.
+
+        var classeAbc = window.document.getElementsByClassName('abc')[0] 
+        // no caso de classe tem de colocar a posição do objeto com os []
+        classeAbc.style.color = 'white', classeAbc.style.padding = '20px' // Pode ser na mesma linha sep por vírgula
+        classeAbc.style.borderRadius = '10px' // Ou um por linha
+        classeAbc.style.width = '100px' //Podemos alterar estilos pelo JS também, provável que com alguma forma mais simplificada para todas as instâncias em um único comando. Por momento foi a forma que descobri.
+
+
+        classeAbc = document.querySelector('.abc').style.background = 'grey'
+        classeAbc = document.querySelector('#msg').style.background = '#CE1E4B'
+        // Podemos selecionar e aplicar o estilo na mesma linha de comando após demonstrar o seletor da classe ou id escolhidos com o .style e a instância que iremos mudar;
     </script>
 </body>
 </html>
