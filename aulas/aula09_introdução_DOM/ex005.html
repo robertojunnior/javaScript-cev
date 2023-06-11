@@ -26,7 +26,7 @@
     <img width="200px" src="img/arvore_dom.png" alt="">
     <br> <br>
 
-    <h4>Selecionando elementos no DOM</h4>
+    <h4>Selecionando elementos (Objetos) no DOM</h4>
     <ul>
         <li>por Marca => getElementByTagName()</li>
         <li>por ID => getElementById()</li>
@@ -44,6 +44,13 @@
         var p2 = window.document.getElementsByTagName('p')[1] // selecionando o 2º p com [1]
         window.document.write('O segundo parágrafo é: ', p2.innerHTML, '<br>') // selecionou o 2º p com o strong devido ao 'innerHTML'
 
+        var corpo = document.body
+        corpo.style.background = 'black' // alterando a cor do fundo com Js pelo DOM.
+        corpo.style.marginLeft = '2rem' // adicionando 2rem de margem na esquerda do body.
+        // corpo.style.display = 'flex'
+    
+    
+    
     </script>
 </body>
 </html>
