@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 2rem 2rem;
+            background-color: black;
+            color: white;
+            font: normal 1.25rem arial;
+        }
+
+        #area {
+        font: bold 1.25rem arial;
+        background: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        line-height: 200px;
+        text-align: center;
+        }
+
+        #area2 {
+        font: bold 1.25rem arial;
+        background: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    #area:hover {
+        transform: scale(1.025);
+    }
+
+    #events_dom {
+        width: 200px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h4>Exemplo criando eventos pelo HTML:</h4>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" >
+        <p>Passe o mouse...</p>
+    </div>
+
+    <br>
+    <h4>Exemplo criando eventos pelo JS:</h4>
+    <div id="area2" font: 'bold 0.75rem'>
+        <p>Passe o mouse...</p>
+    </div>
+
+
+    <br>
+    <img src="img/events_dom.png" alt="" id="events_dom">
+
+    <script>
+         /* Também podemos criar a var 'area' fora da 'function', para reutilizar dentro das 3 funções sem a necessidade de toda vez buscar ela pelo 'getElementById'
+        EX: */
+        
+        var area = window.document.getElementById('area')
+
+        // Após criada a var fora das funções usariamos somente como no exemplo abaixo:
+        function clicar() {
+            area.innerText = 'Clicou'
+        }
+
+        function entrar() {
+            area.innerText = 'Clique Aqui!'
+        }
+
+        //Abaixo vemos a forma tradicional completa e mais extensa do comando.
+        function clicar() {
+            var clicar = window.document.getElementById('area').innerText = 'Clicou!'
+            area.style.background = '#CE1E4B'
+            setTimeout(passeOMouse, 2000)
+        }
+
+        function entrar() {
+            var entrar = window.document.getElementById('area').innerText = 'Clique Aqui!'
+        }
+
+        function sair() {
+            var sair  = window.document.getElementById('area').innerText = 'Saiu!'
+            area.style.background = 'green'  
+            setTimeout(passeOMouse, 2000)     
+        }
+
+        function passeOMouse () {
+            area.innerText = 'Passe o mouse...'
+        }
+
+
+        //Agora vamos realizar os mesmos eventos totalmente a partir do JS, anteriormente foi criando os comandos junto a div após o id como na linha 40.
+
+        // Para os eventos no JS precisamos criar os 'addEventList' como nos exemplos abaixo:
+
+        
+        area2.addEventListener('mouseenter', entrar2)
+        area2.addEventListener('click', clicar2)
+        area2.addEventListener('mouseout', sair2)
+
+        function entrar2 () {
+            area2.innerText = 'Clique Aqui!'
+        }
+
+        function clicar2 (){
+            area2.innerText = 'Clicou!'
+            area2.style.background = '#CE1E4B'
+            setTimeout(passeOMouse2, 2000)
+        }
+        // Pesquisei no MDN uma forma de após o click ele voltar ao normal e encontrei o 'seTimeOut', que após executar o 'clicar2' em 3 segundos ele retorna a msg original
+        function sair2 () {
+            area2.innerText = 'Saiu!'
+            area2.style.background = 'green'
+            setTimeout(passeOMouse2, 2000)
+        }
+
+        function passeOMouse2 () {
+            area2.innerText = 'Passe o mouse...'
+        }
+
+
+        
+
+        //Temos então duas formas com o mesmo resultado, notamos que a segunda forma não utiliza a linha de código completa, sendo mais limpa porém menos descritiva para um iniciante.
+
+
+    </script>
+    
+</body>
+</html>
