@@ -47,7 +47,7 @@
         function cidadania() {
         var nomePaís = document.querySelector('input#paísDigitado')// esta var recebe país digitado o input;
         var resultado = document.querySelector('div#resultado')// esta var recebe a div resultado que irá ser substituída;
-        var país = (nomePaís.value).toUpperCase() // esta var recebe o valor da var nomePaís, para ser reconhecida abaixo com o innerHTML para a interpolação.
+        var país = (nomePaís.value).toUpperCase() // esta var recebe o valor da var nomePaís, traansforma em maíuscula para ser reconhecida abaixo com o if e o innerHTML fazer a interpolação.
 
         if (país != 'BRASIL'){
             resultado.innerHTML = `Se o seu País de origem é <strong>${país.toUpperCase()}</strong>, você é Estrangeiro.` 
