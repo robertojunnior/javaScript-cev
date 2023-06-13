@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JS</title>
+    <style>
+        body {
+            margin: 2rem 2rem;
+            background-color: rgb(66, 120, 156);
+            color: white;
+            font: normal 1rem arial;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        #resultado{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições em JS - IF and ELSE</h1>
+    <img src="img/ifelse.png" alt="">
+    <br>
+    <h4>Tipos de condição</h4>
+
+    <h5><li>Condição Simples</li></h5>
+    <p id="condição_simples">
+        if (condição) { <br>
+            true <br>
+        } <br>
+    </p>
+    <h5><li>Condição Composta</li></h5>
+    <p>
+        if (condição) { <br> 
+            true <br>
+        } else { <br>
+            false <br>
+        } <br>
+    </p>
+
+    <h2>Exemplos de condições:</h2>
+    <h3>Sistema de Multas</h3>
+
+    <p>Velocidade do carro:
+    <input type="number" name="texto_velocidade" id="texto_velocidade"> km/h.</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado"><p>Resultado: </p></div>
+    
+    <script>
+        function calcular() {
+            var vel_digitada = document.querySelector('input#texto_velocidade')
+            var resultado = document.querySelector('div#resultado')
+            var velocidade = Number(vel_digitada.value)
+            resultado.innerHTML = `Sua velocidade atual é de <strong>${velocidade}km/h.</strong><br>`
+
+            if (velocidade > 60){
+                resultado.innerHTML += `Você ultrapassou o limite de velocidade de <strong>60km/h</strong> desta via e foi <strong>MULTADO!</strong><br>`
+        }
+            resultado.innerHTML += `Dirija com cuidade e sempre utilize o cinto de segurança!`
+    }
+    </script>
+</body>
+</html>
