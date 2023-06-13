@@ -12,36 +12,47 @@
             font: normal 1rem arial;
         }
 
-        img {
-            width: 200px;
+        #paísDigitado {
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
         }
 
         #resultado{
-            padding: 20px 0;
+            padding: 5px 5px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            color: rgb(66, 120, 156);
+        }
+
+        #button {
+            border-radius: 10px;
+            padding: 5px;
         }
     </style>
 </head>
 
 <body>
     <h2>Exemplos de condições:</h2>
-    <h3>Sistema de Multas</h3>
+    <h3>Sistema de Verificação de Cidadania Brasileira.</h3>
 
-    <p>Velocidade do carro:
-    <input type="number" name="texto_velocidade" id="texto_velocidade"> km/h.</p>
-    <input type="button" value="Verificar" onclick="calcular()">
+    <label for="texto_país">Digite em qual país você nasceu?</label>
+    <input type="text" name="paísDigitado" id="paísDigitado">
+    <input type="button" value="Verificar" onclick="cidadania()" id="button">
     <div id="resultado"><p>Resultado: </p></div>
     
     <script>
-        function calcular() {
-            var vel_digitada = document.querySelector('input#texto_velocidade')
-            var resultado = document.querySelector('div#resultado')
-            var velocidade = Number(vel_digitada.value)
-            resultado.innerHTML = `Sua velocidade atual é de <strong>${velocidade}km/h.</strong><br>`
 
-            if (velocidade > 60){
-                resultado.innerHTML += `Você ultrapassou o limite de velocidade de <strong>60km/h</strong> desta via e foi <strong>MULTADO!</strong><br>`
+        function cidadania() {
+        var país = document.querySelector('input#paísDigitado')
+        var resultado = document.querySelector('div#resultado')
+
+        if (país != 'Brasil'){
+            resultado.innerHTML = `Se o seu País de origem é <strong>${país}</strong>, você é Estrangeiro.`
+        } else {
+            resultado.innerHTML = `Se o seu País de origem é <strong>${país}</strong>, você é Brasileiro.`
         }
-            resultado.innerHTML += `Dirija com cuidade e sempre utilize o cinto de segurança!`
     }
     </script>
 </body>
