@@ -31,22 +31,24 @@
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="input1" id="input1"> +
+    <input type="number" name="input1" id="input1"> + <!--usuário digita valores nos inputs-->
     <input type="number" name="input2" id="input2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Somar" onclick="somar()"> <!-- Botão somar já apresentando a função somar() que vai ser utilizada no script-->
 
     <div id="resultado">Resultado</div>
 
     <script>
         function somar() {
-            var t1 = document.getElementById('input1')
-            var t2 = document.querySelector('input#input2')
-            var resultado = document.getElementById('resultado')
+            var t1 = document.getElementById('input1') // recebe o que for digitado
+            var t2 = document.querySelector('input#input2') // pelo usuário
+            
+            var n1 = Number(t1.value) // Transforma o que for digitado de string para 
+            var n2 = Number(t2.value)// número, identifica float sozinho (Number)
+            var soma = n1 + n2 // Soma os valores das variáveis 'n1 + n2'
 
-            var n1 = Number.parseFloat(t1.value)
-            var n2 = Number.parseFloat(t2.value)
-            var soma = n1 + n2
+            var resultado = document.getElementById('resultado') // busca linha 38
             resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}.`
+            // apresenta o resultado dentro da div 'resultado' usando o innerHTML e interpolação com ${}
         }
     </script>
     
