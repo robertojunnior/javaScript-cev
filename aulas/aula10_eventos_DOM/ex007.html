@@ -39,11 +39,10 @@
 
     <script>
         function somar() {
-            var t1 = document.getElementById('input1') // recebe o que for digitado
-            var t2 = document.querySelector('input#input2') // pelo usuário
-            
-            var n1 = Number(t1.value) // Transforma o que for digitado de string para 
-            var n2 = Number(t2.value)// número, identifica float sozinho (Number)
+            var t1 = document.getElementById('input1') // recebe o que for digitado input1
+            var t2 = document.querySelector('input#input2') // recebe input2
+            var n1 = Number(t1.value) // Transforma de string para numero com 'Number'
+            var n2 = Number(t2.value)// 'Number' dentifica float sozinho 
             var soma = n1 + n2 // Soma os valores das variáveis 'n1 + n2'
 
             var resultado = document.getElementById('resultado') // busca linha 38
