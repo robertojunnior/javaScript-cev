@@ -14,22 +14,25 @@
         }
 
         input {
+            width: 100px;
             padding: 10px;
+            font: normal 25px arial;
         }
 
         #resultado {
             background-color: white;
             margin-top: 20px;
-            width: 400px;
+            width:370px;
             padding: 10px 0;
             color: black;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="texto1" id="input1"> +
-    <input type="number" name="texto2" id="input2">
+    <input type="number" name="input1" id="input1"> +
+    <input type="number" name="input2" id="input2">
     <input type="button" value="Somar" onclick="somar()">
 
     <div id="resultado">Resultado</div>
