@@ -45,13 +45,14 @@
     <script>
 
         function cidadania() {
-        var país = document.querySelector('input#paísDigitado')
-        var resultado = document.querySelector('div#resultado')
+        var nomePaís = document.querySelector('input#paísDigitado')// esta var recebe país digitado o input;
+        var resultado = document.querySelector('div#resultado')// esta var recebe a div resultado que irá ser substituída;
+        var país = (nomePaís.value).toUpperCase() // esta var recebe o valor da var nomePaís, para ser reconhecida abaixo com o innerHTML para a interpolação.
 
-        if (país != 'Brasil'){
-            resultado.innerHTML = `Se o seu País de origem é <strong>${país}</strong>, você é Estrangeiro.`
+        if (país != 'BRASIL'){
+            resultado.innerHTML = `Se o seu País de origem é <strong>${país.toUpperCase()}</strong>, você é Estrangeiro.` 
         } else {
-            resultado.innerHTML = `Se o seu País de origem é <strong>${país}</strong>, você é Brasileiro.`
+            resultado.innerHTML = `Você nasceu no <strong>${país.toUpperCase()}</strong> parabéns! Você é Brasileiro.`
         }
     }
     </script>
