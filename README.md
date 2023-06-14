@@ -19,7 +19,7 @@
 <br>
 
   <div align="center">
-    <a target="_blank" href="https://robertojunnior.github.io/javaScript-cev/">
+    <!--<a target="_blank" href="https://robertojunnior.github.io/javaScript-cev/"> -->
     <img width="15%" src="./imagem/mobile.png" alt="projeto">
     <img width="60%" src="./imagem/notebook.png" alt="projeto"> 
     </a>
