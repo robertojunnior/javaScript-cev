@@ -1,7 +1,7 @@
 <h1 align="center"> Curso de JavaScript</h1>
 
 <p align="center">
- Conteudo utilizado dentro do curso de JavaScript do Prof. Gustavo Guanabara no site <a href="https://cursoemvideo.com">"Curso em vídeo"</a> com o Prof. Gustavo Guanabara.<br/>
+ Conteudo utilizado dentro do curso de JavaScript do no site <a href="https://cursoemvideo.com">"Curso em vídeo"</a> com o Prof. Gustavo Guanabara.<br/>
 </p>
 
 <p align="center">
