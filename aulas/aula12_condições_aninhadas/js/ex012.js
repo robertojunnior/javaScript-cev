@@ -11,3 +11,7 @@ if (hora < 6) {
 } else {
     console.log(`Boa noite!`)
 }
+
+// hora atual traz a hora no momento do arquivo
+// o new date() cria um evento na data
+// o getHours() pega a hora no momento do arquivo
