@@ -2,8 +2,6 @@ var diaAtual = new Date()
 var diaSemana = diaAtual.getDay()
 // o getDay busca a posição do dia na semana começando pelo 0 = Domingo até o 6 = Sábado.
 
-console.log(`Hoje é ${diaSemana}.`)
-
 /*
     0 = Domingo
     1 = Segunda-feira
@@ -16,25 +14,25 @@ console.log(`Hoje é ${diaSemana}.`)
 
 switch (diaSemana) {
     case 0:
-        console.log('Domingo!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Domingo!`)
         break
     case 1:
-        console.log('Segunda-feira!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Segunda-feira!`)
         break
     case 2:
-        console.log('Terça-feira!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Terça-feira!`)
         break
     case 3:
-        console.log('Quarta-feira!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Quarta-feira!`)
         break
     case 4:
-        console.log('Quita-feira!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Quinta-feira!`)
         break
     case 5:
-        console.log('Sexta-feira!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Sexta-feira!`)
         break
     case 6:
-        console.log('Sábado!')
+        console.log(`Hoje é o ${diaSemana}º dia da semana, ou seja: Sábado!`)
         break
     default:
         console.log('[ERRO] - Data inválida!')
