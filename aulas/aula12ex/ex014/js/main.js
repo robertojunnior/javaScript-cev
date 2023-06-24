@@ -2,10 +2,11 @@ function carregar() {
   let mensagem = document.getElementById("mensagem");
   let foto = document.getElementById("imagem");
   let data = new Date()
-//   let hora = data.getHours()
+  let hora = data.getHours()
+  let minutos = (data.getMinutes() < 10 ? '0' : '') + data.getMinutes()
 
-  let hora = 18
-  mensagem.innerHTML = `Agora são ${hora} horas.`
+//   let hora = 18
+  mensagem.innerHTML = `Agora são ${hora} : ${minutos}`
 
 
     if (hora >= 0 && hora < 12){
