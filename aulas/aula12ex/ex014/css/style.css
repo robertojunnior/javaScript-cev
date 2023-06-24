@@ -1,38 +1,41 @@
 body {
     box-sizing: border-box;
     background-color: rgb(70, 146, 196);
-    font: normal 1rem Arial;
-    
+    font: normal 1.5em Arial;
+    text-align: center;
 
 }
 
 header {
     color: white;
-    text-align: center;
 }
 
 section {
     background: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    padding: 15px 20px;
+    width: 50vw;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
+    box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+}
+
+div {
+    /* background-color: aqua; */
+    font: normal 100% open sans;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
 }
 
 img {
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 100%;
+    /* margin-top: 30px; */
+    border-radius: 10px;
 }
 
 footer {
     color: white;
-    text-align: center;
 }
