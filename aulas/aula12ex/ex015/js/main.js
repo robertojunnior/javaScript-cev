@@ -19,6 +19,18 @@ function verificar() { // função criada lá no html
         } else {
             genero = 'Mulher'
         }
+
+
+
+
+
+
+
+
+
+
+
+        
         saida.innerHTML = `Detectamos ${genero} com ${idade} anos.`
     }
 }
