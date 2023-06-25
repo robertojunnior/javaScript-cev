@@ -13,7 +13,7 @@
     <section>
         <div id="entrada">
             <p>Ano de Nascimento: 
-                <input type="number" name="anoNascimento" id="anoNascimento">
+                <input type="number" name="anoNascimento" id="anoNascimento" min="1">
             </p>
             <p>Sexo: 
                 <input type="radio" name="masculino" id="masculino" checked>
@@ -23,7 +23,7 @@
                 <label for="feminino">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" id="btn">
+                <input type="button" value="Verificar" id="btn" onclick="verificar()">
             </p>
         </div>
         <div id="saida">
