@@ -25,6 +25,23 @@
     </a>
   </div>
 
+## 📚 Exercícios
+<h4><li>Hora do dia:</li></h4>
+<div align="center">
+  <a href="https://robertojunnior.github.io/javaScript-cev/aulas/aula12ex/ex014/index.html">
+    <img width="15%" src="aulas/aula12ex/ex014/imagem/mobile.png" alt="projeto">
+    <img width="60%" src="aulas/aula12ex/ex014/imagem/notebook.png" alt="projeto">
+  </a>
+</div>
+
+<h4><li>Verificador de idade:</li></h4>
+<div align="center">
+  <a href="https://robertojunnior.github.io/javaScript-cev/aulas/aula12ex/ex015/index.html">
+    <img width="15%" src="aulas/aula12ex/ex015/imagem/mobile.png" alt="projeto">
+    <img width="60%" src="aulas/aula12ex/ex015/imagem/notebook.png" alt="projeto">
+  </a>
+</div>
+
 <br>
 <br>
 <br>
