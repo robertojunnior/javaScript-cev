@@ -23,13 +23,13 @@ function verificar() { // função criada lá no html
             if (idade >= 0 && idade < 3){
                 // bebe
                 img.setAttribute('src', 'imagem/bebe.png') // este atributo 'src' é o source
-            } else if (idade >= 4 && idade <= 10) {
+            } else if (idade >= 4 && idade <= 13) {
                 //criança
                 img.setAttribute('src', 'imagem/menino.png')
-            } else if (idade > 11 && idade < 17){
+            } else if (idade >= 14 && idade <= 30){
                 // jovem
                 img.setAttribute('src', 'imagem/jovem-homem.png')
-            } else if (idade >= 18 && idade <= 59) {
+            } else if (idade >= 31 && idade <= 59) {
                 //adulto
                 img.setAttribute('src', 'imagem/homem.png')
             } else {
@@ -44,10 +44,10 @@ function verificar() { // função criada lá no html
             } else if (idade >= 4 && idade <= 13) {
                 //criança
                 img.setAttribute('src', 'imagem/menina.png')
-            } else if (idade > 14 && idade < 17){
+            } else if (idade >= 14 && idade <= 30){
                 // jovem
                 img.setAttribute('src', 'imagem/jovem-mulher.png')
-            } else if (idade >= 18 && idade <= 59) {
+            } else if (idade >= 31 && idade <= 59) {
                 //adulto
                 img.setAttribute('src', 'imagem/mulher.png')
             } else {

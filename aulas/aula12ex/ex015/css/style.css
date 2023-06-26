@@ -12,7 +12,7 @@ section {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 15px;
-    max-width: 48vw;
+    width: 50vw;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
 }
@@ -24,7 +24,25 @@ section {
     gap: 15px;
 }
 
+
 footer {
     color: white;
     text-align: center;
+}
+
+
+@media screen and (max-width: 550px){
+    section {
+        width: 80%;
+    }
+
+    #foto {
+        width: 180px;
+    }
+
+    #anoNascimento {
+
+        width: 100px;
+    }
+
 }
