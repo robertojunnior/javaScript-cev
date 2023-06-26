@@ -61,8 +61,3 @@ function verificar() { // função criada lá no html
         // o appendChild demonstrara o conteudo do 'id' img criado anteriormente
     }
 }
-
-// if(idade <= 10) img.setAttribute('src', `images/${genero}/baby.png`)
-//         else if(idade <= 21) img.setAttribute('src', `images/${genero}/teen.png`)
-//         else if(idade <= 50) img.setAttribute('src', `images/${genero}/adult.png`)
-//         else img.setAttribute('src', `images/${genero}/old.png`)
