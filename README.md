@@ -25,6 +25,8 @@
     </a>
   </div>
 
+<br>
+
 ## 📚 Exercícios
 <h4><li>Hora do dia:</li></h4>
 <div align="center">
@@ -42,8 +44,6 @@
   </a>
 </div>
 
-<br>
-<br>
 <br>
 
 ## 🚀 Tecnologias
