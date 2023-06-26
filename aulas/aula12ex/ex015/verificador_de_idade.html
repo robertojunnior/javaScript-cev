@@ -13,16 +13,20 @@
     <section>
         <div id="entrada">
             <p>Ano de Nascimento: 
-                <input type="number" name="anoNascimento" id="anoNascimento" min="1">
+                <input type="number" name="anoNascimento" id="anoNascimento" min="1" placeholder="Digite aqui...">
             </p>
-            <p>Sexo: 
+            <p>Sexo:
+                 <!--type="radio" são os seletores de bolinha para formulários de escolha, 
+                se coloca o mesmo name="" nos seletores para que apenas um possa ser escolhido e 
+            checked para que um dos inputs já comece selecionado  como no exemplo abaixo--->
                 <input type="radio" name="sexo" id="masculino" checked>
                 <label for="masculino">Masculino</label>
 
                 <input type="radio" name="sexo" id="feminino">
                 <label for="feminino">Feminino</label>
             </p>
-            <p>
+            <p> 
+                <!-- o 'onclick()' é a função que vamos utilizar no js para conversar com este html após o clique do mouse no botão 'verificar'-->
                 <input type="button" value="Verificar" id="btn" onclick="verificar()">
             </p>
         </div>

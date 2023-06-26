@@ -14,9 +14,16 @@ section {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 15px;
-    width: 50vw;
+    max-width: 48vw;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
+}
+
+#saida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 footer {
