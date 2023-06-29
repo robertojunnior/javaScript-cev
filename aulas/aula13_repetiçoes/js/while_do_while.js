@@ -17,6 +17,6 @@ while (contador <= 6){ // enauqnto for menor dou igual a 6
 let carneirinhos = 1
 
 do {
-    console.log(carneirinhos, 'Carneirinhos')
+    console.log(carneirinhos, 'Carneirinhos') // executa antes de checar a informação
     carneirinhos++
 } while ( carneirinhos < 10)
