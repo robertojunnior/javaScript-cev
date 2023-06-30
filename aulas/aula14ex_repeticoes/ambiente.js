@@ -1,8 +1,8 @@
 // while e do while
-// var c = 1
-// while (c <= 10){
-//     console.log(c)
-//     c++
+// var c = 1                   (recebe o valor 1)
+// while (c <= 10){            (enquanto c for menor ou igual a 10)
+//     console.log(c)          (imprima avariavel c)
+//     c++                     (e some mais um até que o valor seja 10)
 // }
 
 //-----------------------------
