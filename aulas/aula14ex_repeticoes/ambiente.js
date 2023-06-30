@@ -8,8 +8,20 @@
 //-----------------------------
 // for
 // variavel ou inicio ; teste logico ; incremento
-for (var c = 1; c <= 10; c++){
+// for (var c = 1; c <= 10; c++){
+//     console.log(c)
+// }
+
+//------------------------------
+var debug_console = document.getElementById('debug_console')
+debug_console.style.width = '400px'
+
+console.log('Vai começar...')
+for (var c = 1; c <= 4; c++){
     console.log(c)
 }
+console.log('Terminou.')
+
+
 
 

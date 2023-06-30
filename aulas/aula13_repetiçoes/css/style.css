@@ -16,3 +16,7 @@ h3 {
 img {
     width: 200px;
 }
+
+#debug_console {
+    width: 400px;
+}
