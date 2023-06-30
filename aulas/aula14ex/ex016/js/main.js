@@ -1,20 +1,20 @@
 function contar() {
   let inicio = document.getElementById("textoInicio");
   let fim = document.getElementById("textoFim");
-  let passo = document.getElementById("textoPasso");
+  let pulando = document.getElementById("textoPulando");
   let resultado = document.getElementById("resultado");
 
-  if (inicio.value === 0 || fim.value === 0 || passo.value === 0) {
+  if (inicio.value === 0 || fim.value === 0 || pulando.value === 0) {
     // alert("[ERRO] Faltam dados para executar!");
     resultado.innerHTML = "Insira os dados novamente!:";
   } else {
     resultado.innerHTML = "Contando: <br>"
     let i = Number(inicio.value);
     let f = Number(fim.value);
-    let p = Number(passo.value);
+    let p = Number(pulando.value);
 
     if (p <= 0) {
-        alert('Passo inválido! Cosiderando PASSO = 1') 
+        alert('pulando inválido! Cosiderando pulando = 1') 
         p = 1
     }
 
