@@ -14,7 +14,7 @@ function contar() {
     let p = Number(pulando.value);
 
     if (p <= 0) {
-        alert('pulando inválido! Cosiderando pulando = 1') 
+        alert('Pulando inválido! Cosiderando PULO = 1') 
         p = 1
     }
 
