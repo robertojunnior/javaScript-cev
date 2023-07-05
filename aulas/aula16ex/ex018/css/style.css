@@ -19,8 +19,8 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
 }
 
-input {
-    margin-top: 10px;
+#frase_intro {
+    margin: 5px 0;
 }
 
 #flista {
