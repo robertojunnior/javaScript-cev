@@ -61,6 +61,6 @@ function finalizar() {
     res.innerHTML += `<p>O maior valor informado foi o ${maior}.</p>`;
     res.innerHTML += `<p>O menor valor informado foi o ${menor}.</p>`;
     res.innerHTML += `<p>A soma total dos valores adicionados é ${soma}</p>`;
-    res.innerHTML += `<p>A média dos valores adicionados é ${media}</p>`;
+    res.innerHTML += `<p>A média dos valores adicionados é ${media.toFixed(2)}</p>`;
   }
 }

@@ -44,6 +44,14 @@
   </a>
 </div>
 
+<h4><li>Analisador de números:</li></h4>
+<div align="center">
+  <a href="https://robertojunnior.github.io/javaScript-cev/aulas/aula16ex/ex018/index.html">
+    <img width="15%" src="aulas/aula16ex/ex018/imagem/mobile.png" alt="projeto">
+    <img width="60%" src="aulas/aula16ex/ex018/imagem/notebook.png" alt="projeto">
+  </a>
+</div>
+
 <br>
 
 ## 🚀 Tecnologias
