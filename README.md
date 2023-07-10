@@ -61,6 +61,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 <li> HTML
 <li> CSS
 <li> JavaScript
+<li> Node Js
 <li> GitHub
 
 ## 💻 Projeto
